@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply bg-black text-white px-4 py-2 rounded-lg font-medium tracking-tight inline-flex items-center justify-center;
+    }
+
+    .btn-primary {
+        @apply bg-black text-white;
+    }
+
+    .btn-text {
+        @apply text-black bg-transparent;
+    }
+}
+
+@keyframes slowMove {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(5deg);
+    }
+
+    100% {
+        transform: translateY(10) rotate(5deg);
+    }
+}
+
+.animate-slowMove {
+    animation: slowMove 5s ease-in-out infinite;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
